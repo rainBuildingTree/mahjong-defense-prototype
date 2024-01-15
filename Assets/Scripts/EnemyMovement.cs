@@ -15,7 +15,11 @@ public class EnemyMovement : MonoBehaviour {
     void Awake() {
         GetWaypointsFromManager();
     }
-    void OnEnable() {
+
+
+
+    /* PUBLIC METHODS */
+    public void InitializeMovement() {
         JumpToFirstWaypoint();
         StartCoroutine(FollowWaypoints());
     }
@@ -60,6 +64,7 @@ public class EnemyMovement : MonoBehaviour {
             }
         }
 
+        gameObject.SetActive(false);
         yield return null;
     }
 }
