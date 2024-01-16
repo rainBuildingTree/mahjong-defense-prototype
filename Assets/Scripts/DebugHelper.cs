@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DebugHelper : MonoBehaviour {
+    /* MEMBER VARIABLES *///==================================================
     [SerializeField] EnemyObjectPool _target0;
 
+
+
+    /* UNITY EVENT FUNCTIONS *///==================================================
     void Update() {
         if (Input.GetKeyDown(KeyCode.Q))
             _target0.SetCurrentRound(0);

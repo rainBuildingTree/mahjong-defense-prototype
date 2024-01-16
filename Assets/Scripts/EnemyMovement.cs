@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour {
-    /* MEMBER VARIABLES */
+    /* MEMBER VARIABLES *///==================================================
     EnemyWaypointManager waypointManager;
+
+    const float MoveSpeed = 1; // moves 'MoveSpeed' distance per a second
+
     List<Transform> waypoints;
 
-    float moveSpeed = 1; // moves 'moveSpeed' distance per a second
 
 
-
-    /* UNITY EVENT FUNCTIONS */
+    /* UNITY EVENT FUNCTIONS *///==================================================
     void Awake() {
-        GetWaypointsFromManager();
+        GetWaypoints();
     }
 
 
 
-    /* PUBLIC METHODS */
+    /* PUBLIC METHODS *///==================================================
     public void InitializeMovement() {
         JumpToFirstWaypoint();
         StartCoroutine(FollowWaypoints());
@@ -26,8 +27,8 @@ public class EnemyMovement : MonoBehaviour {
 
 
 
-    /* PRIVATE METHODS */
-    void GetWaypointsFromManager() {
+    /* PRIVATE METHODS *///==================================================
+    void GetWaypoints() {
         waypoints = new List<Transform>();
         waypointManager = FindObjectOfType<EnemyWaypointManager>();
 
@@ -35,16 +36,14 @@ public class EnemyMovement : MonoBehaviour {
             waypoints.Add(t);
         }
     }
-    void JumpToFirstWaypoint()
-    {
+    void JumpToFirstWaypoint() {
         transform.position = waypoints[0].position;
     }
 
 
 
-    /* IENUMERATORS */
-    IEnumerator FollowWaypoints()
-    {
+    /* IENUMERATORS *///==================================================
+    IEnumerator FollowWaypoints() {
         yield return new WaitForEndOfFrame();
 
         foreach (Transform waypoint in waypoints) {
@@ -54,7 +53,7 @@ public class EnemyMovement : MonoBehaviour {
             float progressRate = 0f;
 
             while (progressRate < 1f) {
-                progressRate = progressRate + Time.deltaTime * (moveSpeed / targetDistance);
+                progressRate = progressRate + Time.deltaTime * (MoveSpeed / targetDistance);
                 if (progressRate > 1f)
                     progressRate = 1f;
 

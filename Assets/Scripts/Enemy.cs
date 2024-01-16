@@ -3,21 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
+    /* ENUMS *///==================================================
     public enum MonsterType { None, RedSlime, GreenSlime, BlueSlime }
-    MonsterType _monsterType = MonsterType.None;
     public enum ElementalAttribute { None, Pyro, Anemo, Hydro }
-    ElementalAttribute _elementalAttribute = ElementalAttribute.None;
+
+
+
+    /* MEMBER VARIABLES *///==================================================
+    [SerializeField] Sprite[] _sprites;
 
     SpriteRenderer _spriteRenderer;
     EnemyMovement _movement;
 
-    [SerializeField] Sprite[] _sprites;
+    MonsterType _monsterType = MonsterType.None;
+    ElementalAttribute _elementalAttribute = ElementalAttribute.None;
+    
 
+
+    /* UNITY EVENT FUNCTIONS *///=================d=================================
     void Awake() {
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _movement = GetComponent<EnemyMovement>();
     }
 
+
+
+    /* PUBLIC METHODS *///==================================================
     public void SetMonsterType(MonsterType monsterType) {
         _monsterType = monsterType;
         LoadEnemyData();
@@ -27,6 +38,9 @@ public class Enemy : MonoBehaviour {
         _movement.InitializeMovement();
     }
 
+
+
+    /* PRIVATE METHODS *///==================================================
     void LoadEnemyData() {
         switch (_monsterType) {
             case MonsterType.RedSlime:
