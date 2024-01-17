@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     /* ENUMS *///==================================================
-    public enum MonsterType { None, RedSlime, GreenSlime, BlueSlime }
-    public enum ElementalAttribute { None, Pyro, Anemo, Hydro }
+    public enum MonsterType { RedSlime, GreenSlime, BlueSlime, None }
+    public enum ElementalAttribute { Pyro, Anemo, Hydro, None }
 
 
 

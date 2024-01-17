@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &988820678166441994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6662163206841048640}
+  - component: {fileID: 6484025316665418302}
+  - component: {fileID: 604823241474002650}
+  - component: {fileID: 4825886504538214007}
+  - component: {fileID: -4104480330679035580}
+  m_Layer: 5
+  m_Name: Card
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6662163206841048640
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988820678166441994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 90, y: 135}
+  m_Pivot: {x: 0, y: 0}
+--- !u!222 &6484025316665418302
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988820678166441994}
+  m_CullTransparentMesh: 1
+--- !u!114 &604823241474002650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988820678166441994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d5b2aa7f64a3649438688266d54c9ec1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4825886504538214007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988820678166441994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b96cb1a02070743809483f906ee0df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 1a1ed0fee410466489b6f928c5c9e258, type: 3}
+  - {fileID: 21300000, guid: e17b6d2df3323a0449594159c08b8306, type: 3}
+  - {fileID: 21300000, guid: b9354327cd4955541932bc3150074854, type: 3}
+  - {fileID: 21300000, guid: f662989e239f4d44f9c5a30ccfcd1eee, type: 3}
+  - {fileID: 21300000, guid: 1310315b7715c8c448943ab38ef89c45, type: 3}
+  - {fileID: 21300000, guid: 74129b6e400c78844b5d862fc368842d, type: 3}
+  - {fileID: 21300000, guid: cffa40e74cbef484887bfa512a951174, type: 3}
+  - {fileID: 21300000, guid: e077cdf9eb3954049aedf908b478ef68, type: 3}
+  - {fileID: 21300000, guid: 63528b771495f794bbd61c20e07270ee, type: 3}
+  - {fileID: 21300000, guid: ee6de5365350f7649929ce47c49e44ff, type: 3}
+  - {fileID: 21300000, guid: 367d9b177ebdd7c44ba480044ea96be5, type: 3}
+  - {fileID: 21300000, guid: a75d7408d40f88d4eb46554c3583ec37, type: 3}
+  - {fileID: 21300000, guid: 4037320d69f1b5049bdc2e10fd601b9b, type: 3}
+  - {fileID: 21300000, guid: 88082e8ba5603b1499c1c89a8427f12e, type: 3}
+  - {fileID: 21300000, guid: 5fa59c82aeca9634e96c7bbeced261c1, type: 3}
+  - {fileID: 21300000, guid: 3bde1a959272d0040aeb028c86e3a6d0, type: 3}
+  - {fileID: 21300000, guid: 3eea9bffef3bfa145b1fb0805ddf92d0, type: 3}
+  - {fileID: 21300000, guid: d14a400baba39494698abfcd86c3567d, type: 3}
+  - {fileID: 21300000, guid: 442a8f6549dc17d448b5b429972261ae, type: 3}
+  - {fileID: 21300000, guid: d9ff73e379000f94caeffbc5b02efe06, type: 3}
+  - {fileID: 21300000, guid: aa5cfad1be0eccf4ba8d877a2042e01f, type: 3}
+  - {fileID: 21300000, guid: d508a686bfab3a74fb8ffc6c81189904, type: 3}
+  - {fileID: 21300000, guid: f39d38da80ed672439aaf98f6f0e1b75, type: 3}
+  - {fileID: 21300000, guid: 62f88cdb88f94ed489fa183c0c602c92, type: 3}
+  - {fileID: 21300000, guid: 82ab4b8c0c8a85740ad3db9639452c55, type: 3}
+  - {fileID: 21300000, guid: 4def01e5fe1140e4eb71850f3bae643a, type: 3}
+  - {fileID: 21300000, guid: a52025731430c574baf7de889dcc878a, type: 3}
+  - {fileID: 21300000, guid: d5b2aa7f64a3649438688266d54c9ec1, type: 3}
+  - {fileID: 21300000, guid: 325cf460809629044ad1bf3785ccfe78, type: 3}
+  - {fileID: 21300000, guid: e0f5d7a6ec89b354993ccafb9c98ae1f, type: 3}
+  - {fileID: 21300000, guid: 9b2fece8c6aae1a41a23eebf179b76fa, type: 3}
+  - {fileID: 21300000, guid: dbc1ed7297c58ed48bafb36310e18f2b, type: 3}
+  - {fileID: 21300000, guid: 43f1834b57f2dfd448e98b140607f617, type: 3}
+  - {fileID: 21300000, guid: 9f16e550f6ac3a542852495269c5a99f, type: 3}
+--- !u!61 &-4104480330679035580
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988820678166441994}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

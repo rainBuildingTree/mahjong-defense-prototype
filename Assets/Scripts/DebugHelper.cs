@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class DebugHelper : MonoBehaviour {
     /* MEMBER VARIABLES *///==================================================
-    [SerializeField] EnemyObjectPool _target0;
+    [SerializeField] Card _target0;
 
 
 
     /* UNITY EVENT FUNCTIONS *///==================================================
     void Update() {
         if (Input.GetKeyDown(KeyCode.Q))
-            _target0.SetCurrentRound(0);
+            _target0.Initialize(0);
         else if (Input.GetKeyDown(KeyCode.W))
-            _target0.SetCurrentRound(1);
+            _target0.Initialize(13);
         else if (Input.GetKeyDown(KeyCode.E))
-            _target0.SetCurrentRound(2);
+            _target0.Initialize(25);
         else if (Input.GetKeyDown(KeyCode.R))
-            _target0.PlayRound();
+            _target0.Initialize(31);
+        else if (Input.GetKeyDown(KeyCode.T))
+            _target0.Initialize(69);
     }
 }
