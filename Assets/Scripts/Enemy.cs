@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour {
     
 
 
-    /* UNITY EVENT FUNCTIONS *///=================d=================================
+    /* UNITY EVENT FUNCTIONS *///==================================================
     void Awake() {
         _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _movement = GetComponent<EnemyMovement>();

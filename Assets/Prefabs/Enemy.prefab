@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sprites:
-  - {fileID: 0}
   - {fileID: 21300000, guid: 918eaf1594168cb4b91434097283fc4a, type: 3}
   - {fileID: 21300000, guid: 56bc0b806a82da640a9ef0a63a14616d, type: 3}
   - {fileID: 21300000, guid: 9c9025c86cc72fc4f8c2a7872362ea7c, type: 3}
+  - {fileID: 0}

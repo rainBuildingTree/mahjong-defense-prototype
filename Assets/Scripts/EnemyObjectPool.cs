@@ -32,6 +32,22 @@ public class EnemyObjectPool : MonoBehaviour {
             return;
         StartCoroutine(ProcessRound());
     }
+    public Transform ClosestEnemy(Vector2 position) {
+        float closestDistance = float.MaxValue;
+        int closestEnemyIndex = -1;
+        for (int i = 0; i < PoolSize; ++i) {
+            if (!_enemyPool[i].gameObject.activeInHierarchy)
+                continue;
+            float distance = Vector2.Distance(_enemyPool[i].transform.position, position);
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                closestEnemyIndex = i;
+            }
+        }
+        if (closestEnemyIndex < 0)
+            return null;
+        return _enemyPool[closestEnemyIndex].transform;
+    }
 
 
 

@@ -6,22 +6,35 @@ using UnityEngine.EventSystems;
 
 
 public class PlayerCardHand : MonoBehaviour {
+    /* Loaded Objects */
     [SerializeField] GameObject cardPrefab;
-    [SerializeField] Sprite cardSprites;
+    RectTransform rectTransform;
+    AimController aimControl;
 
+    /* Constants */
     const int HandSize = 14;
     const int NumTotalCardKind = 34;
 
-
+    /* Data */
     Card[] handCards;
-    RectTransform rectTransform;
+
+    /* Public Get/Set */
+    public AimController AimControl { get { return aimControl; } }
+    
 
 
+    /* Unity Event Functions */
     void Awake() {
         handCards = new Card[HandSize];
         rectTransform = GetComponent<RectTransform>();
+        aimControl = FindObjectOfType<AimController>();
+        aimControl.gameObject.SetActive(false);
         InitializeHand();
     }
+
+
+
+    /* Public Methods */
     public void InitializeHand() {
         for (int i = 0; i < HandSize; ++i) {
             handCards[i] = Instantiate(cardPrefab, transform).GetComponent<Card>();
@@ -43,6 +56,9 @@ public class PlayerCardHand : MonoBehaviour {
         SortCards();
     }
 
+
+
+    /* Private Methods */
     void SortCards() {
         for (int i = 0; i < HandSize - 2; ++i) {
             for (int j = i+1; j < HandSize - 1; ++j) {

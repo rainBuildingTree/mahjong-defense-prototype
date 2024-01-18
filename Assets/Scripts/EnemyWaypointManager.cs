@@ -2,4 +2,4 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyWaypointManager : MonoBehaviour {}
+public class EnemyWaypointManager : MonoBehaviour { }
