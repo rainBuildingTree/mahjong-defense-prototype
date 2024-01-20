@@ -5,6 +5,8 @@ using UnityEngine;
 public class DebugHelper : MonoBehaviour {
     /* MEMBER VARIABLES *///==================================================
     [SerializeField] EnemyObjectPool _target0;
+    [SerializeField] PlayerCardHand _target1;
+    int[] indice = {0, 1, 2};
 
 
 
@@ -18,5 +20,7 @@ public class DebugHelper : MonoBehaviour {
             _target0.SetCurrentRound(2);
         else if (Input.GetKeyDown(KeyCode.R))
             _target0.PlayRound();
+        else if (Input.GetKeyDown(KeyCode.T))
+            _target1.MergeCards(indice, 34);
     }
 }
