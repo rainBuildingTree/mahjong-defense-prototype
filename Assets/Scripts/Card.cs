@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class Card : 
 MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
-IBeginDragHandler, IDragHandler, IEndDragHandler {
+IBeginDragHandler, IDragHandler, IEndDragHandler,
+IPointerDownHandler, IPointerUpHandler {
     /* Enums *///==================================================
-    protected enum ElementalAttribute { Pyro, Anemo, Hydro, Char, None }
+    public enum ElementalAttribute { Pyro, Anemo, Hydro, Char, None }
 
     /* Member Variables *///==================================================
     // Loaded Componenets
@@ -17,6 +18,7 @@ IBeginDragHandler, IDragHandler, IEndDragHandler {
     protected Image imageComponent;
     protected RectTransform _rectTransform;
     protected PlayerCardHand playerCardHand;
+    protected Image screener;
 
     // Constants
     protected const int NumCardPerAttribute = 9;
@@ -31,8 +33,8 @@ IBeginDragHandler, IDragHandler, IEndDragHandler {
 
     // Public Get/Setter
     public RectTransform rectTransform { get { return _rectTransform; } }
-    public int code { get { return _code; } }
-    public int indexInHand { get {return _indexInHand; } }
+    public int Code { get { return _code; } }
+    public int IndexInHand { get { return _indexInHand; } }
     
     
     
@@ -53,15 +55,26 @@ IBeginDragHandler, IDragHandler, IEndDragHandler {
         _rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, _uiSize.x);
         _rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _uiSize.y);   
     }
+    public void OnPointerDown(PointerEventData eventData) {
+
+    }
+    public void OnPointerUp(PointerEventData eventData) {
+        if (!playerCardHand.IsMergeMode)
+            return;
+        playerCardHand.RegisterCardToMerge(_indexInHand);
+    }
 
     // Drag and Drop Interface
     public void OnDrag(PointerEventData eventData) { }
     public void OnBeginDrag(PointerEventData eventData) {
-        playerCardHand.AimControl.gameObject.SetActive(true);
+        if (!playerCardHand.IsMergeMode)
+            playerCardHand.AimControl.gameObject.SetActive(true);
     }
     public void OnEndDrag(PointerEventData eventData) {
-        playerCardHand.AimControl.gameObject.SetActive(false);
-        playerCardHand.SelectCard(_indexInHand);
+        if (!playerCardHand.IsMergeMode) {
+            playerCardHand.AimControl.gameObject.SetActive(false);
+            playerCardHand.SelectCard(_indexInHand);
+        }
     }
 
 
@@ -82,6 +95,14 @@ IBeginDragHandler, IDragHandler, IEndDragHandler {
     }
     public void SetIndexInHand(int index) {
         _indexInHand = index;
+    }
+    public void SetScreenerActive(bool isActive) {
+        if (isActive) {
+            imageComponent.color = new Color(0.5f, 0.5f, 0.5f);
+        }
+        else {
+            imageComponent.color = Color.white;
+        }
     }
 
 

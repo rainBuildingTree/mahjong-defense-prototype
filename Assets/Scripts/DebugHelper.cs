@@ -20,7 +20,5 @@ public class DebugHelper : MonoBehaviour {
             _target0.SetCurrentRound(2);
         else if (Input.GetKeyDown(KeyCode.R))
             _target0.PlayRound();
-        else if (Input.GetKeyDown(KeyCode.T))
-            _target1.MergeCards(indice, 34);
     }
 }

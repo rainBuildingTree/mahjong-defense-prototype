@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class MergedCard : Card {
-    public enum MergeType {Sequence, Triplet, Quad}
+    public enum MergeType {Sequence, Triplet, Quad, None}
 
     private MergedCard _next = null;
     private MergedCard _prev = null;
@@ -20,7 +20,7 @@ public class MergedCard : Card {
     
 
     public override void Initialize(int cardCode) {
-        if (cardCode < 34 || cardCode > 40) {
+        if (cardCode < 34 || cardCode > 41) {
             Debug.Log("Illegal merged card code of:\t" + cardCode.ToString());
             return;
         }
