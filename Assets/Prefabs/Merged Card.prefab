@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites: []
+  _spriteStorage: {fileID: 11400000, guid: b8e67f91297eb4a49a7730c15923cc64, type: 2}
   mergedCardSprites:
   - {fileID: 21300000, guid: efbb5b044ce173844a79f32cd5a19fb5, type: 3}
   - {fileID: 21300000, guid: 45c107689cc89aa4a9be124ed82c46cc, type: 3}

@@ -124,6 +124,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dbc1ed7297c58ed48bafb36310e18f2b, type: 3}
   - {fileID: 21300000, guid: 43f1834b57f2dfd448e98b140607f617, type: 3}
   - {fileID: 21300000, guid: 9f16e550f6ac3a542852495269c5a99f, type: 3}
+  _spriteStorage: {fileID: 11400000, guid: b8e67f91297eb4a49a7730c15923cc64, type: 2}
 --- !u!61 &-4104480330679035580
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -31,6 +31,9 @@ public class AimController : MonoBehaviour {
         mainCam = FindObjectOfType<Camera>();
         maxAttachDistance = rectTransform.rect.width;
     }
+    void Start() {
+        gameObject.SetActive(false);
+    }
     void OnEnable() {
         Cursor.visible = false;
         JumpToMousePosition();

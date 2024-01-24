@@ -5,7 +5,7 @@ using UnityEngine;
 public class DebugHelper : MonoBehaviour {
     /* MEMBER VARIABLES *///==================================================
     [SerializeField] EnemyObjectPool _target0;
-    [SerializeField] PlayerCardHand _target1;
+    [SerializeField] PlayerDeckManager _target1;
     int[] indice = {0, 1, 2};
 
 

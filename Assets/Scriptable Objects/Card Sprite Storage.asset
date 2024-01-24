@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871011c7c81a0704ebb89f46e2286b6a, type: 3}
+  m_Name: Card Sprite Storage
+  m_EditorClassIdentifier: 
+  pyroCardSprites:
+  - {fileID: 21300000, guid: 1a1ed0fee410466489b6f928c5c9e258, type: 3}
+  - {fileID: 21300000, guid: e17b6d2df3323a0449594159c08b8306, type: 3}
+  - {fileID: 21300000, guid: b9354327cd4955541932bc3150074854, type: 3}
+  - {fileID: 21300000, guid: f662989e239f4d44f9c5a30ccfcd1eee, type: 3}
+  - {fileID: 21300000, guid: 1310315b7715c8c448943ab38ef89c45, type: 3}
+  - {fileID: 21300000, guid: 74129b6e400c78844b5d862fc368842d, type: 3}
+  - {fileID: 21300000, guid: cffa40e74cbef484887bfa512a951174, type: 3}
+  - {fileID: 21300000, guid: e077cdf9eb3954049aedf908b478ef68, type: 3}
+  - {fileID: 21300000, guid: 63528b771495f794bbd61c20e07270ee, type: 3}
+  anemoCardSprites:
+  - {fileID: 21300000, guid: ee6de5365350f7649929ce47c49e44ff, type: 3}
+  - {fileID: 21300000, guid: 367d9b177ebdd7c44ba480044ea96be5, type: 3}
+  - {fileID: 21300000, guid: a75d7408d40f88d4eb46554c3583ec37, type: 3}
+  - {fileID: 21300000, guid: 4037320d69f1b5049bdc2e10fd601b9b, type: 3}
+  - {fileID: 21300000, guid: 88082e8ba5603b1499c1c89a8427f12e, type: 3}
+  - {fileID: 21300000, guid: 5fa59c82aeca9634e96c7bbeced261c1, type: 3}
+  - {fileID: 21300000, guid: 3bde1a959272d0040aeb028c86e3a6d0, type: 3}
+  - {fileID: 21300000, guid: 3eea9bffef3bfa145b1fb0805ddf92d0, type: 3}
+  - {fileID: 21300000, guid: d14a400baba39494698abfcd86c3567d, type: 3}
+  hydroCardSprites:
+  - {fileID: 21300000, guid: 442a8f6549dc17d448b5b429972261ae, type: 3}
+  - {fileID: 21300000, guid: d9ff73e379000f94caeffbc5b02efe06, type: 3}
+  - {fileID: 21300000, guid: aa5cfad1be0eccf4ba8d877a2042e01f, type: 3}
+  - {fileID: 21300000, guid: d508a686bfab3a74fb8ffc6c81189904, type: 3}
+  - {fileID: 21300000, guid: f39d38da80ed672439aaf98f6f0e1b75, type: 3}
+  - {fileID: 21300000, guid: 62f88cdb88f94ed489fa183c0c602c92, type: 3}
+  - {fileID: 21300000, guid: 82ab4b8c0c8a85740ad3db9639452c55, type: 3}
+  - {fileID: 21300000, guid: 4def01e5fe1140e4eb71850f3bae643a, type: 3}
+  - {fileID: 21300000, guid: a52025731430c574baf7de889dcc878a, type: 3}
+  charCardSprites:
+  - {fileID: 21300000, guid: d5b2aa7f64a3649438688266d54c9ec1, type: 3}
+  - {fileID: 21300000, guid: 325cf460809629044ad1bf3785ccfe78, type: 3}
+  - {fileID: 21300000, guid: e0f5d7a6ec89b354993ccafb9c98ae1f, type: 3}
+  - {fileID: 21300000, guid: 9b2fece8c6aae1a41a23eebf179b76fa, type: 3}
+  - {fileID: 21300000, guid: dbc1ed7297c58ed48bafb36310e18f2b, type: 3}
+  - {fileID: 21300000, guid: 43f1834b57f2dfd448e98b140607f617, type: 3}
+  - {fileID: 21300000, guid: 9f16e550f6ac3a542852495269c5a99f, type: 3}
+  pyroSequenceCardSprites:
+  - {fileID: 21300000, guid: 16f6c9c50990f364c9fae43fa3a56ade, type: 3}
+  - {fileID: 21300000, guid: 670b739410348e6448598bb7e51e171d, type: 3}
+  - {fileID: 21300000, guid: 7156d092c4ecba1469522564ff1f786e, type: 3}
+  - {fileID: 21300000, guid: e30acff52ecbcd4479eb11fdbea14d6f, type: 3}
+  - {fileID: 21300000, guid: 649c6397055804b48b0183123dc78182, type: 3}
+  - {fileID: 21300000, guid: b71d41c2bae0d924c9a4dbcb14442b3d, type: 3}
+  - {fileID: 21300000, guid: 973ee5c97266bdf41b7c72d3d4b62033, type: 3}
+  anemoSequenceCardSprites:
+  - {fileID: 21300000, guid: e3349b4be256f334fae6096bf24b9971, type: 3}
+  - {fileID: 21300000, guid: 203b9a67a89c51e42858dc1a5363f1ce, type: 3}
+  - {fileID: 21300000, guid: 92053f01aa466aa4e9337b5d2a442193, type: 3}
+  - {fileID: 21300000, guid: 4f7eb52eb6e96364b9d482fa2fd7d809, type: 3}
+  - {fileID: 21300000, guid: c567c6a223c83ae478968a1956eb66d5, type: 3}
+  - {fileID: 21300000, guid: ac2e8b5ecc69f5045b778cdf690cddea, type: 3}
+  - {fileID: 21300000, guid: 7f50a59db3f73f143b6253bb8e87fa8c, type: 3}
+  hydroSequenceCardSprites:
+  - {fileID: 21300000, guid: c0d46ced880b2e340818098745b7925e, type: 3}
+  - {fileID: 21300000, guid: 2ec6d591cff1fce459be6b16e656883a, type: 3}
+  - {fileID: 21300000, guid: 04175c4d8da123a41a056b1bce75c250, type: 3}
+  - {fileID: 21300000, guid: 06e72f435f88178499d44cf97f3af681, type: 3}
+  - {fileID: 21300000, guid: 0225bc683e137d14a802e67cba7bc13d, type: 3}
+  - {fileID: 21300000, guid: ef4ace89f6c26aa45a7372affe05fe5c, type: 3}
+  - {fileID: 21300000, guid: 46450c136f3bcce49aa949236509e600, type: 3}
+  pyroTripletCardSprites:
+  - {fileID: 21300000, guid: b87007ab60eb51b409607966e3c2334d, type: 3}
+  - {fileID: 21300000, guid: 40925042c4651d048b3d19c373c4f59b, type: 3}
+  - {fileID: 21300000, guid: 29eaaaf2e821fab4793e1f8e490e868e, type: 3}
+  - {fileID: 21300000, guid: 78d847dfa60a72e4fb13c5316b54a521, type: 3}
+  - {fileID: 21300000, guid: 90cf1f458b4af18428976428d8f17996, type: 3}
+  - {fileID: 21300000, guid: 89567732f398e0941a3e0238033b6cb4, type: 3}
+  - {fileID: 21300000, guid: 533ce796561606940b7ea2a9a3155e14, type: 3}
+  - {fileID: 21300000, guid: d21b9114eb55bff4f845e0afffb52615, type: 3}
+  - {fileID: 21300000, guid: 0876b72f4d623c546ad47892d1e2c547, type: 3}
+  anemoTripletCardSprites:
+  - {fileID: 21300000, guid: 38dd6ccbdd176f540944b025f403e37e, type: 3}
+  - {fileID: 21300000, guid: 3531d2dc63c431a449a04faa61060871, type: 3}
+  - {fileID: 21300000, guid: 3e0ca090f1a9e9d4482cf6d32075d120, type: 3}
+  - {fileID: 21300000, guid: 0c4bc06ed16d9984b90f49de11dff1b5, type: 3}
+  - {fileID: 21300000, guid: bef7a0ecf6f3a8249abe4964b79b7b92, type: 3}
+  - {fileID: 21300000, guid: b051148bb7ea60043bf87ac97ad02165, type: 3}
+  - {fileID: 21300000, guid: 1fc472bfc7fa42c4ab75964c5c72fe69, type: 3}
+  - {fileID: 21300000, guid: e9aa7afd8df366f41a7569b69e15a237, type: 3}
+  - {fileID: 21300000, guid: cef0243a8f8d41f49a4c20e9fba799de, type: 3}
+  hydroTripletCardSprites:
+  - {fileID: 21300000, guid: a7e3022ed7d16e7408d61f8cead3c1ee, type: 3}
+  - {fileID: 21300000, guid: eb8701e4678e39d47925d232a1a528e4, type: 3}
+  - {fileID: 21300000, guid: 096227fdced64e04697d64ff3cfe8637, type: 3}
+  - {fileID: 21300000, guid: 6a26637ac1a6b3a47a1c144fbdaaff58, type: 3}
+  - {fileID: 21300000, guid: 67165f533fe809d4ea50ab348bf6c589, type: 3}
+  - {fileID: 21300000, guid: 02322edde5bc18748a9a2969511d70e6, type: 3}
+  - {fileID: 21300000, guid: c10fdec99f5fd7d439023a8307fefbc3, type: 3}
+  - {fileID: 21300000, guid: c65d73d05172e1b42a0fb366325955df, type: 3}
+  - {fileID: 21300000, guid: ba9aa78fb8be61f479d4918b23719557, type: 3}
+  charTripletCardSprites:
+  - {fileID: 21300000, guid: 12585774f9b3a944cb8a4016bb225013, type: 3}
+  - {fileID: 21300000, guid: b979fe1679254e045a415357aff4e62b, type: 3}
+  - {fileID: 21300000, guid: ca3a964927782d44fbfbb4840f8fb934, type: 3}
+  - {fileID: 21300000, guid: 4fd3e7b2d0203e84b97435e02ecf6926, type: 3}
+  - {fileID: 21300000, guid: 3da854471698ca54abbedf0e9f60389a, type: 3}
+  - {fileID: 21300000, guid: ff83f92c838ca8b4a8665a106ddf4885, type: 3}
+  - {fileID: 21300000, guid: 1fd04aa6d36a8a44fb8dcb5bd342ffed, type: 3}
