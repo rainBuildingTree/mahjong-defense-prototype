@@ -11,8 +11,6 @@ public class MergedCard : Card {
     public MergedCard next { get { return _next;} }
     public MergedCard prev { get { return _prev;} }
 
-    [SerializeField] private Sprite[] mergedCardSprites;
-
     private const int NumMergedCardPerAttribute = 2;
     private const int NumTotalCardKind = 34;
     

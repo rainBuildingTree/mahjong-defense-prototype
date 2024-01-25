@@ -50,14 +50,6 @@ public class CardHand : MonoBehaviour {
         }
         AssignIndexToCards();
         Place();
-        string res = "";
-        for (int i = 0; i < _size; ++i) {
-            if (_cards[i] == null)
-                res += "-1 ";
-            else
-                res += _cards[i].Code.ToString() + " ";
-        }
-        Debug.Log(res);
     }
     public void AssignIndexToCards() {
         for (int i = 0 ; i < _size; ++i) {
@@ -72,11 +64,11 @@ public class CardHand : MonoBehaviour {
             if (_cards[i] == null)
                 continue;
             _cards[i].rectTransform.anchoredPosition = new Vector3(xPlacePosition, 0f, 0f);
-            xPlacePosition += _cards[i].rectTransform.rect.width;
+            xPlacePosition += _cards[i].UISize.x;
         }
         if (_cards[_size-1] == null)
             return;
-        xPlacePosition = _manager.RectTransform.rect.width - _cards[_size-1].rectTransform.rect.width;
+        xPlacePosition = _manager.RectTransform.rect.width - _cards[_size-1].UISize.x;
         _cards[_size-1].rectTransform.anchoredPosition = new Vector3(xPlacePosition, 0f, 0f);
     }
     public void Draw() {
@@ -91,9 +83,10 @@ public class CardHand : MonoBehaviour {
         _cards[_size-1].Initialize(Random.Range(0, NumTotalCardKind));
         _numCards++;
         Sort();
+        Place();
+
     }
     public void UseCard(int index) {
-        Debug.Log("UseCard called");
         if (index < 0 || index >= _size)
             return;
 
@@ -118,7 +111,7 @@ public class CardHand : MonoBehaviour {
         yield return new WaitForEndOfFrame();
         while (true) {
             if (_numCards >= _size) {
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForEndOfFrame();
                 continue;
             }
             _manager.CardGenSlider.ResetTimer();

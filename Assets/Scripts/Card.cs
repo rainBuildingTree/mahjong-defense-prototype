@@ -13,7 +13,6 @@ IPointerDownHandler, IPointerUpHandler {
 
     /* Member Variables *///==================================================
     // Loaded Componenets
-    [SerializeField] protected Sprite[] sprites;
     [SerializeField] protected CardSpriteStorage _spriteStorage;
     protected Image imageComponent;
     protected RectTransform _rectTransform;
@@ -37,6 +36,7 @@ IPointerDownHandler, IPointerUpHandler {
     public int IndexInHand { get { return _indexInHand; } }
     public ElementalAttribute Attribute { get { return _attribute; } }
     public int Number { get { return _number; } }
+    public Vector2 UISize { get { return _uiSize; } }
     
     
     
